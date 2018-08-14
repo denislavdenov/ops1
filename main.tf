@@ -9,8 +9,8 @@ provider "github" {
   organization = "FromBeginning"
 }
 
-resource "github_repository" "example2" {
-  name        = "example2"
+resource "github_repository" "example5" {
+  name        = "example5"
   description = "My awesome codebase"
 }
 
