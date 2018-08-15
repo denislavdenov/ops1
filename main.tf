@@ -33,7 +33,7 @@ resource "github_repository" "random2" {
 
 # We use count to generate multiple repos
 resource "github_repository" "multiples" {
-  count       = 9
+  count       = "${var.repo_count}"
   name        = "multiple${count.index}"
   description = "My awesome codebase"
 }
