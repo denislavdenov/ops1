@@ -1,9 +1,3 @@
-# Configure the GitHub Provider
-provider "github" {
-  token        = "${var.github_token}"
-  organization = "FromBeginning"
-}
-
 # 2 repos with hardcoded names
 resource "github_repository" "example1" {
   name        = "example1"
