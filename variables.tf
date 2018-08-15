@@ -12,6 +12,6 @@ variable "github_organization" {
 # Count variable
 variable "repo_count" {
   description = "repo count"
-  default     = 100
+  default     = 2
 
 }
