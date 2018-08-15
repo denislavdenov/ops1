@@ -1,14 +1,3 @@
-# token variable
-variable "github_token" {
-  description = "github token"
-}
-
-# Configure the GitHub Provider
-provider "github" {
-  token        = "${var.github_token}"
-  organization = "FromBeginning"
-}
-
 # 2 repos with hardcoded names
 resource "github_repository" "example1" {
   name        = "example1"
