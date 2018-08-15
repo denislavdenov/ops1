@@ -30,3 +30,10 @@ resource "github_repository" "random2" {
   name        = "${random_pet.random_repo2.id}"
   description = "My awesome pet project"
 }
+
+# We use count to generate multiple repos
+resource "github_repository" "multiples" {
+  count       = 9
+  name        = "multiple${count.index}"
+  description = "My awesome codebase"
+}
